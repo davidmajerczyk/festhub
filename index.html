@@ -27,16 +27,16 @@
 /* Két valódi hordó + külön márkaválaszték */
 .keg-showcase{background:var(--paper)}
 .keg-showcase-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;gap:30px;max-width:970px;margin:24px auto 10px}
-.keg-duo{position:relative;min-height:340px;isolation:isolate}
-.keg-duo img{position:absolute;object-fit:contain;background:white;border:1px solid #dce3f1;box-shadow:0 12px 25px #0d235025;padding:10px;border-radius:7px}
-.keg-duo .keg-back{height:255px;width:56%;top:12px;right:6%;z-index:1;transform:rotate(5deg)}
-.keg-duo .keg-front{height:285px;width:61%;bottom:8px;left:5%;z-index:2;transform:rotate(-5deg)}
+.keg-duo{position:relative;min-height:340px;isolation:isolate;overflow:visible}
+.keg-duo img{position:absolute;object-fit:contain;background:transparent;border:0;box-shadow:none;padding:0;border-radius:0;display:block}
+.keg-duo .keg-back{height:255px;width:56%;top:18px;right:8%;z-index:1;transform:rotate(4deg)}
+.keg-duo .keg-front{height:290px;width:62%;bottom:0;left:4%;z-index:2;transform:rotate(-4deg)}
 .keg-choice{padding:18px 14px;text-align:center}
 .keg-choice h3{font:800 23px 'Playfair Display',Georgia,serif;margin:0 0 22px}
 .keg-brand-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:center;justify-items:center;gap:13px;margin-bottom:26px}
 .keg-brand-grid img{display:block;width:100%;height:120px;object-fit:contain}
-@media(max-width:850px){.keg-showcase-layout{grid-template-columns:1fr;gap:5px}.keg-duo{max-width:430px;width:100%;margin:auto}.keg-choice{padding:8px 0 20px}.keg-brand-grid{max-width:650px;margin:0 auto 24px}}
-@media(max-width:480px){.keg-duo{min-height:270px}.keg-duo .keg-back{height:205px}.keg-duo .keg-front{height:225px}.keg-brand-grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:15px}.keg-brand-grid img{height:115px}}
+@media(max-width:850px){.keg-showcase-layout{grid-template-columns:1fr;gap:5px}.keg-duo{position:relative;min-height:340px;isolation:isolate;overflow:visible}.keg-choice{padding:8px 0 20px}.keg-brand-grid{max-width:650px;margin:0 auto 24px}}
+@media(max-width:480px){.keg-duo{position:relative;min-height:340px;isolation:isolate;overflow:visible}.keg-duo .keg-back{height:255px;width:56%;top:18px;right:8%;z-index:1;transform:rotate(4deg)}.keg-duo .keg-front{height:290px;width:62%;bottom:0;left:4%;z-index:2;transform:rotate(-4deg)}.keg-brand-grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:15px}.keg-brand-grid img{height:115px}}
 </style></head><body><div class="site"><div class="topwave"></div><header class="navbar"><a href="#fooldal" class="logo">Fest Hub</a><button class="menu-toggle" aria-label="Menü megnyitása" aria-expanded="false">☰</button><nav class="navlinks" aria-label="Főmenü"><a href="#szolgaltatasok">Szolgáltatásaink</a><a href="#sorok">Bajor sörök</a><a href="#rolunk">Rólunk</a><a href="#kapcsolat" class="navcta">Ajánlatkérés</a></nav></header>
 <main><section class="hero" id="fooldal"><div><div class="eyebrow">Születésnapok • Kerti partik • Családi ünnepek</div><h1>Fest Hub<br>A te ünneped, a mi segítségünk.</h1><p>Születésnap, kerti parti, családi ünnep vagy baráti összejövetel? Nálunk te döntöd el, mennyi segítségre van szükséged: bérelhetsz csak eszközöket, kérhetsz italokat és jeget, vagy ránk bízhatod a teljes rendezvény lebonyolítását.</p><div class="hero-actions"><a class="cta" href="#szolgaltatasok">Szolgáltatásaink</a><a class="cta alt" href="#kapcsolat">Ajánlatot kérek</a></div></div><img fetchpriority="high" class="hero-art" src="assets/tent.png" alt="Egyedi kék metszetrajz egy kerti rendezvény pavilonjáról és sörpadjairól"></section><div class="rule"></div>
 <div class="ribbon"><strong>Egy jó bulihoz minden egy helyről</strong><p>Legyen szó egy meghitt családi összejövetelről vagy egy nagyobb kerti partiról: az eszközöktől az italokon át, igény esetén a teljes szervezésig és helyszíni lebonyolításig számíthatsz ránk.</p></div>
