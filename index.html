@@ -37,6 +37,16 @@
 .keg-brand-grid img{display:block;width:100%;height:120px;object-fit:contain}
 @media(max-width:850px){.keg-showcase-layout{grid-template-columns:1fr;gap:5px}.keg-duo{position:relative;min-height:340px;isolation:isolate;overflow:visible}.keg-choice{padding:8px 0 20px}.keg-brand-grid{max-width:650px;margin:0 auto 24px}}
 @media(max-width:480px){.keg-duo{position:relative;min-height:340px;isolation:isolate;overflow:visible}.keg-duo .keg-back{height:255px;width:56%;top:18px;right:8%;z-index:1;transform:none}.keg-duo .keg-front{height:290px;width:62%;bottom:0;left:4%;z-index:2;transform:none}.keg-brand-grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:15px}.keg-brand-grid img{height:115px}}
+
+/* Átlátszó hátterű hordók, természetes átfedéssel */
+.keg-duo{position:relative;min-height:360px;isolation:isolate;overflow:visible}
+.keg-duo img{position:absolute;object-fit:contain;background:transparent !important;border:0 !important;box-shadow:none !important;padding:0 !important;border-radius:0 !important;display:block;filter:none}
+.keg-back{height:255px;width:auto;max-width:52%;top:28px;left:22%;right:auto;bottom:auto;z-index:1;transform:none !important}
+.keg-front{height:285px;width:auto;max-width:56%;top:92px;left:6%;right:auto;bottom:auto;z-index:2;transform:none !important}
+.keg-choice{padding:18px 14px;text-align:center}
+@media (max-width:900px){.keg-showcase-layout{grid-template-columns:1fr;gap:16px}.keg-duo{margin:0 auto;max-width:420px;min-height:330px}.keg-back{max-width:50%;left:24%;top:18px;height:235px}.keg-front{max-width:55%;left:9%;top:78px;height:260px}}
+@media (max-width:560px){.keg-duo{max-width:320px;min-height:290px}.keg-back{max-width:50%;left:21%;top:18px;height:205px}.keg-front{max-width:56%;left:2%;top:70px;height:225px}}
+
 </style></head><body><div class="site"><div class="topwave"></div><header class="navbar"><a href="#fooldal" class="logo">Fest Hub</a><button class="menu-toggle" aria-label="Menü megnyitása" aria-expanded="false">☰</button><nav class="navlinks" aria-label="Főmenü"><a href="#szolgaltatasok">Szolgáltatásaink</a><a href="#sorok">Bajor sörök</a><a href="#rolunk">Rólunk</a><a href="#kapcsolat" class="navcta">Ajánlatkérés</a></nav></header>
 <main><section class="hero" id="fooldal"><div><div class="eyebrow">Születésnapok • Kerti partik • Családi ünnepek</div><h1>Fest Hub<br>A te ünneped, a mi segítségünk.</h1><p>Születésnap, kerti parti, családi ünnep vagy baráti összejövetel? Nálunk te döntöd el, mennyi segítségre van szükséged: bérelhetsz csak eszközöket, kérhetsz italokat és jeget, vagy ránk bízhatod a teljes rendezvény lebonyolítását.</p><div class="hero-actions"><a class="cta" href="#szolgaltatasok">Szolgáltatásaink</a><a class="cta alt" href="#kapcsolat">Ajánlatot kérek</a></div></div><img fetchpriority="high" class="hero-art" src="assets/tent.png" alt="Egyedi kék metszetrajz egy kerti rendezvény pavilonjáról és sörpadjairól"></section><div class="rule"></div>
 <div class="ribbon"><strong>Egy jó bulihoz minden egy helyről</strong><p>Legyen szó egy meghitt családi összejövetelről vagy egy nagyobb kerti partiról: az eszközöktől az italokon át, igény esetén a teljes szervezésig és helyszíni lebonyolításig számíthatsz ránk.</p></div>
@@ -47,8 +57,8 @@
   <p class="keg-intro">Bajor sörkülönlegességek hordós kiszerelésben. Igény szerint sörcsapot és helyszíni italkiszolgálást is biztosítunk.</p>
   <div class="keg-showcase-layout">
     <div class="keg-duo" aria-label="Tegernseer és Augustiner söröshordók">
-      <img class="keg-back" src="https://expressdrinks.de/media/image/f6/1b/6d/10019654.jpg" alt="Augustiner eredeti söröshordó" loading="lazy" referrerpolicy="no-referrer">
-      <img class="keg-front" src="https://www.getraenkedienst.com/muenchen/media/image/62/11/35/DSC_0823.jpg" alt="Tegernseer eredeti söröshordó" loading="lazy" referrerpolicy="no-referrer">
+      <img class="keg-back" src="assets/augustiner-keg.png" alt="Augustiner hordó" loading="lazy" referrerpolicy="no-referrer">
+      <img class="keg-front" src="assets/tegernseer-keg.png" alt="Tegernseer hordó" loading="lazy" referrerpolicy="no-referrer">
     </div>
     <div class="keg-choice">
       <h3>Választható márkáink</h3>
@@ -61,7 +71,7 @@
       <a class="cta" href="#kapcsolat">Érdeklődöm a sörökről</a>
     </div>
   </div>
-  <p class="keg-note">A hordófotók szemléltető képek. A hordók és a rendelkezésre álló kiszerelések változhatnak. A fotók külső kereskedői oldalakról töltődnek be; végleges felhasználásukhoz saját vagy engedélyezett fotók ajánlottak.</p>
+  <p class="keg-note">A hordók tájékoztató jelleggel jelennek meg. A rendelhető márkák és elérhető kiszerelések kapcsán kérj ajánlatot.</p>
 </section>
 <section class="section" id="rolunk"><div class="eyebrow">Fest Hub • Pilisvörösvár</div><h2>Ti ünnepeltek. Mi segítünk a háttérben.</h2><p class="intro">A Wunderbar rendezvényes italkiszolgálásában szerzett tapasztalatunkat most a kisebb, személyesebb alkalmakon is kamatoztatjuk. Legyen születésnap, családi ünnep vagy baráti kerti parti, a Fest Hubbal nem kell mindent külön-külön intézned. Mi biztosíthatjuk a felszerelést, az italokat, a jeget és a személyzetet – vagy igény szerint a teljes lebonyolítást is.</p></section>
 <div class="rule"></div><section class="contact" id="kapcsolat"><div class="contactgrid"><div><div class="eyebrow">Kapcsolat</div><h2>Közeleg egy születésnap vagy kerti parti?</h2><p>Meséld el, mit ünnepeltek, hol, mikor és körülbelül hány vendéggel. Akkor is írj nyugodtan, ha még csak az ötlet van meg: közösen kitaláljuk, miben tudunk segíteni.</p><div class="details"><a href="tel:+36703805834">☎ +36 70 380 5834</a><a href="mailto:festhubinfo@gmail.com">✉ festhubinfo@gmail.com</a><span>⌖ Pilisvörösvár</span></div></div><div class="contactbox"><h3>Mesélj a tervezett buliról!</h3><p>Csak pár sörpad kell? Ital és jég is jól jönne? Vagy szeretnéd az egész lebonyolítást ránk bízni? Írd meg, mire készülsz, és személyre szabott ajánlatot adunk.</p><p>Az ajánlatkérés egyelőre a levelezőprogramodban nyílik meg, külön webes űrlapot később készítünk.</p><a class="cta" href="mailto:festhubinfo@gmail.com?subject=Fest%20Hub%20%E2%80%93%20Aj%C3%A1nlatk%C3%A9r%C3%A9s%20csal%C3%A1di%20rendezv%C3%A9nyre&amp;body=Milyen%20alkalomra%20k%C3%A9sz%C3%BClt%C3%B6k%20%28sz%C3%BClet%C3%A9snap%2C%20kerti%20parti%2C%20csal%C3%A1di%20%C3%BCnnep%29%3F%0AId%C5%91pont%3A%0AHelysz%C3%ADn%3A%0AV%C3%A1rhat%C3%B3%20vend%C3%A9gek%20sz%C3%A1ma%3A%0AMiben%20seg%C3%ADthet%C3%BCnk%20%28eszk%C3%B6z%C3%B6k%20/%20italok%20/%20j%C3%A9g%20/%20szem%C3%A9lyzet%20/%20teljes%20lebonyol%C3%ADt%C3%A1s%29%3F%0AEgy%C3%A9b%20tudnival%C3%B3k%3A%0A">Ajánlatkérés e-mailben ↗</a></div></div></section></main><div class="bottomwave"></div><footer class="footer"><strong>FEST HUB · SZÜLETÉSNAPOK · KERTI PARTIK · CSALÁDI ÜNNEPEK</strong><span>Pilisvörösvár · © 2026 Fest Hub</span></footer></div><script>const b=document.querySelector('.menu-toggle'),n=document.querySelector('.navlinks');b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',String(o))});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false')}));</script></body></html>
